@@ -32,7 +32,7 @@
       "image": "logo.png", 
       "description": "General contractor specializing in roofing and roof repairs in California.",
       "telephone": "5309131408",
-      "email": "info@trattcon.com",
+      "email": "jeredtrattner01@gmail.com",
       "address": {
         "@type": "PostalAddress",
         "addressRegion": "CA",
@@ -418,7 +418,7 @@
             
             <div class="hero-buttons">
                 <a href="tel:5309131408" class="btn btn-primary"><i class="fa-solid fa-phone"></i> Call Direct</a>
-                <a href="mailto:info@trattcon.com" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Email Us</a>
+                <a href="mailto:jeredtrattner01@gmail.com" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Email Us</a>
             </div>
         </div>
     </section>
@@ -441,8 +441,8 @@
             <div class="footer-col">
                 <h4>Contact Us</h4>
                 <p><strong>Jered Trattner</strong><br>Owner & General Contractor</p>
-                <a href="tel:5309131408"><i class="fa-solid fa-phone" style="color:var(--gold-accent);"></i> (530) 456-7890</a>
-                <a href="mailto:info@trattcon.com"><i class="fa-solid fa-envelope" style="color:var(--gold-accent);"></i> info@trattcon.com</a>
+                <a href="tel:5309131408"><i class="fa-solid fa-phone" style="color:var(--gold-accent);"></i> (530) 913-1408</a>
+                <a href="mailto:jeredtrattner01@gmail.com"><i class="fa-solid fa-envelope" style="color:var(--gold-accent);"></i> jeredtrattner01@gmail.com</a>
             </div>
 
             <div class="footer-col">
@@ -450,7 +450,7 @@
                 <a href="#">Terms of Service</a>
                 <a href="#">Privacy Policy</a>
                 <p style="font-size: 0.8rem; color: #888; margin-top: 15px;">
-                   <em>*Licensing status updates currently in progress with the CSLB. Fully insured.</em>
+                   <em>CSLB License #1133148. Fully insured.</em>
                 </p>
             </div>
 
@@ -458,9 +458,10 @@
                 <h4>Follow Our Work</h4>
                 <p>See our latest builds, before & afters, and behind-the-scenes progress.</p>
                 <div class="footer-socials">
-                    <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
                 </div>
             </div>
 
@@ -472,10 +473,14 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 Trattner and Associates Construction Inc. All Rights Reserved.</p>
+            <p>&copy; <span id="year"></span> Trattner and Associates Construction Inc. All Rights Reserved.</p>
             <p>Designed with Intention.</p>
         </div>
     </footer>
+    
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
