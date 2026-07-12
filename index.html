@@ -1,489 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PN2RVSDW5G"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-PN2RVSDW5G');
-    </script>
-
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="42038751-5b8e-4e5c-9605-b3f514e9b4d9"></script>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trattner and Associates | Premium Roofing & Construction</title>
-    <meta name="description" content="Expert roofing, roof repairs, and general contracting by Trattner and Associates Construction Inc. Serving California with premium, built-to-last craftsmanship.">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Syncopate:wght@700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "RoofingContractor",
-      "name": "Trattner and Associates Construction Inc.",
-      "image": "logo.png", 
-      "description": "General contractor specializing in roofing and roof repairs in California.",
-      "telephone": "5309131408",
-      "email": "jeredtrattner01@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressRegion": "CA",
-        "addressCountry": "US"
-      }
-    }
-    </script>
-
+    <title>Consumer Alert: Unlicensed Contractor Awareness</title>
     <style>
-        /* --- DESIGN SYSTEM & CSS VARIABLES --- */
         :root {
-            --primary-stone: #2C302E;   /* Dark structural slate from logo */
-            --earth-green: #3A473D;     /* Subtle pine green */
-            --gold-accent: #C5A059;     /* Subtle trippy/psychedelic gold flare */
-            --light-bg: #F9F9F9;
-            --white: #FFFFFF;
-            --text-dark: #1A1A1A;
-            --text-muted: #666666;
-            --font-clean: 'Montserrat', sans-serif;
-            --font-display: 'Syncopate', sans-serif; /* For the 'Trattner' tracking vibe */
-        }
-
-        /* --- GLOBAL STYLES --- */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
+            --primary-color: #d9534f;
+            --secondary-color: #f0ad4e;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
         }
 
         body {
-            font-family: var(--font-clean);
-            color: var(--text-dark);
-            background-color: var(--light-bg);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
         }
 
-        /* --- NAVIGATION --- */
-        header {
-            background-color: rgba(44, 48, 46, 0.95);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
-            backdrop-filter: blur(10px);
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
-        }
-
-        .nav-logo img {
-            height: 50px; /* Small, elegant nav logo */
-            vertical-align: middle;
-        }
-
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 25px;
-        }
-
-        .nav-item {
-            position: relative;
-        }
-
-        .nav-link {
-            color: var(--white);
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 0.85rem;
-            font-weight: 600;
-            letter-spacing: 1px;
-            transition: color 0.3s ease;
-        }
-
-        .nav-link:hover {
-            color: var(--gold-accent);
-        }
-
-        /* Dropdown menus for future expansion */
-        .dropdown {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: var(--primary-stone);
-            min-width: 180px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            padding: 10px 0;
-            border-radius: 4px;
-        }
-
-        .nav-item:hover .dropdown {
-            display: block;
-        }
-
-        .dropdown a {
-            color: var(--white);
-            padding: 10px 20px;
-            text-decoration: none;
-            display: block;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-        }
-
-        .dropdown a:hover {
-            background-color: var(--earth-green);
-            color: var(--gold-accent);
-        }
-
-        .nav-ctas {
-            display: flex;
-            gap: 10px;
-        }
-
-        /* --- BUTTONS --- */
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-        }
-
-        .btn-primary {
-            background-color: var(--gold-accent);
-            color: var(--primary-stone);
-        }
-
-        .btn-primary:hover {
-            background-color: var(--white);
-            color: var(--primary-stone);
-            transform: translateY(-2px);
-        }
-
-        .btn-secondary {
-            border: 2px solid var(--white);
-            color: var(--white);
-        }
-
-        .btn-secondary:hover {
-            background-color: var(--white);
-            color: var(--primary-stone);
-            transform: translateY(-2px);
-        }
-
-        /* --- HERO BANNER --- */
-        .hero {
-            background: linear-gradient(rgba(44, 48, 46, 0.85), rgba(58, 71, 61, 0.9)), url('hero-bg-blueprint.jpg') no-repeat center center/cover;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        /* Top Alert Bar */
+        .alert-bar {
+            background-color: var(--primary-color);
+            color: white;
             text-align: center;
-            color: var(--white);
-            padding: 120px 20px 60px 20px;
-            position: relative;
-        }
-
-        /* Subtle psychedelic background pattern simulation */
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: radial-gradient(circle, rgba(197, 160, 89, 0.05) 0%, transparent 70%);
-            pointer-events: none;
-        }
-
-        .hero-content {
-            max-width: 800px;
-            animation: fadeIn 1.5s ease;
-        }
-
-        .hero-logo {
-            max-width: 320px;
-            margin-bottom: 30px;
-            filter: drop-shadow(0px 10px 20px rgba(0,0,0,0.3));
-        }
-
-        .hero h1 {
-            font-family: var(--font-display);
-            font-size: 2.5rem;
-            letter-spacing: 4px;
-            margin-bottom: 15px;
-            font-weight: 700;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            font-weight: 300;
-            margin-bottom: 40px;
-            letter-spacing: 1px;
-            color: #E0E0E0;
-        }
-
-        .hero-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        /* --- MINI MISSION / HISTORY --- */
-        .intro-section {
-            padding: 100px 20px;
-            text-align: center;
-            background-color: var(--white);
-        }
-
-        .section-container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .section-tag {
-            color: var(--gold-accent);
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-size: 0.9rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .intro-section h2 {
-            font-size: 2.2rem;
-            margin-bottom: 30px;
-            font-weight: 600;
-            color: var(--primary-stone);
-        }
-
-        .intro-section p {
+            padding: 10px 20px;
+            font-weight: bold;
             font-size: 1.1rem;
-            color: var(--text-muted);
-            margin-bottom: 20px;
-            max-width: 750px;
-            margin-left: auto;
-            margin-right: auto;
+            letter-spacing: 0.5px;
         }
 
-        /* --- FOOTER --- */
+        /* Header Section */
+        header {
+            background: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--primary-color);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        header h1 {
+            margin: 0;
+            color: #111;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            color: #666;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #111;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* Warning Signs List */
+        .warning-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .warning-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        .warning-list li::before {
+            content: "⚠️";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Action Steps / Tips */
+        .steps-list {
+            padding-left: 20px;
+        }
+
+        .steps-list li {
+            margin-bottom: 12px;
+        }
+
+        .steps-list strong {
+            color: #000;
+        }
+
+        /* Footer */
         footer {
-            background-color: var(--primary-stone);
-            color: var(--white);
-            padding: 60px 20px 20px 20px;
+            text-align: center;
+            padding: 30px 20px;
+            color: #777;
             font-size: 0.9rem;
-            border-top: 4px solid var(--gold-accent);
+            border-top: 1px solid #ddd;
+            margin-top: 60px;
         }
 
-        .footer-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-
-        .footer-col h4 {
-            color: var(--gold-accent);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 20px;
-            font-size: 1rem;
-        }
-
-        .footer-col p, .footer-col a {
-            color: #C0C0C0;
-            text-decoration: none;
-            margin-bottom: 10px;
-            display: block;
-            transition: color 0.3s;
-        }
-
-        .footer-col a:hover {
-            color: var(--white);
-        }
-
-        .footer-socials {
-            display: flex;
-            gap: 15px;
-            font-size: 1.3rem;
-            margin-top: 15px;
-        }
-
-        .footer-socials a:hover {
-            color: var(--gold-accent);
-        }
-
-        .state-seal {
-            max-width: 100px;
-            opacity: 0.7;
-            transition: opacity 0.3s;
-        }
-
-        .state-seal:hover {
-            opacity: 1;
-        }
-
-        .footer-bottom {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding-top: 20px;
-            border-top: 1px solid #404543;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            font-size: 0.8rem;
-            color: #888888;
-        }
-
-        /* --- ANIMATIONS --- */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* --- RESPONSIVE DESIGN --- */
-        @media (max-width: 768px) {
-            .nav-menu, .nav-ctas { display: none; } /* Add burger menu JS later if needed */
-            .hero h1 { font-size: 1.8rem; }
-            .hero-buttons { flex-direction: column; gap: 10px; }
-            .footer-bottom { flex-direction: column; text-align: center; }
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            .container { margin: 20px auto; }
+            .card { padding: 20px; }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="nav-container">
-            <a href="#" class="nav-logo">
-                <img src="trattcon_logo.png" alt="Trattner and Associates Logo">
-            </a>
-            
-            <nav>
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About <i class="fa-solid fa-chevron-down" style="font-size:0.7rem;"></i></a>
-                        <div class="dropdown">
-                            <a href="#">Our History</a>
-                            <a href="#">FAQ / Help</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#services" class="nav-link">Services <i class="fa-solid fa-chevron-down" style="font-size:0.7rem;"></i></a>
-                        <div class="dropdown">
-                            <a href="#">Roofing & Repairs</a>
-                            <a href="#">Service Area</a>
-                            <a href="#">Project Gallery</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+    <!-- Top Alert Bar -->
+    <div class="alert-bar">
+        PUBLIC SAFETY ALERT: Protect Yourself from Fraudulent Roofing & Contracting Practices
+    </div>
 
-            <div class="nav-ctas">
-                <a href="tel:5309131408" class="btn btn-primary"><i class="fa-solid fa-phone"></i> Call Now</a>
-            </div>
-        </div>
+    <!-- Header Block -->
+    <header>
+        <h1>Consumer Protection Notice</h1>
+        <p>A Guide to Identifying Unlicensed and High-Risk Contractors</p>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <img src="trattcon_banner.png" alt="Trattner and Associates Construction Inc" class="hero-logo">
-            <h2>TRATTNER AND ASSOCIATES</h2>
-            <h3>Contstruction Inc.</h3>
-            <p>General Contracting Services</p>
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- Section 1: Red Flags -->
+        <div class="card">
+            <h2>Major Red Flags to Watch For</h2>
+            <p>Before signing a contract or handing over funds for roofing or home repairs, be aware of these common signs of fraudulent operations:</p>
             
-            <div class="hero-buttons">
-                <a href="tel:5309131408" class="btn btn-primary"><i class="fa-solid fa-phone"></i> Call Direct</a>
-                <a href="mailto:jeredtrattner01@gmail.com" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Email Us</a>
-            </div>
+            <ul class="warning-list">
+                <li><strong>No Verifiable License:</strong> Refusal or inability to provide a current, state-issued contractor’s license number.</li>
+                <li><strong>High Upfront Demands:</strong> Pressuring property owners for large cash deposits or full payment before any materials arrive or work begins.</li>
+                <li><strong>Lack of Written Contracts:</strong> Relying strictly on verbal agreements, or using vague, non-binding paperwork that lacks official business details.</li>
+                <li><strong>Unsolicited Door-to-Door Solicitations:</strong> Traveling "crews" offering immediate roofing repairs using leftover materials from a previous job.</li>
+                <li><strong>Unprofessional Conduct:</strong> Erratic behavior on the job site, safety violations, or signs of substance impairment while operating machinery.</li>
+            </ul>
         </div>
-    </section>
 
-    <section id="about" class="intro-section">
-        <div class="section-container">
-            <span class="section-tag">A Legacy of Structure &amp; Integrity</span>
-            <h2>About Us</h2>
-            <p>
-                When excellence is required, trust Trattner and Associates Construction Inc. We combine superior craftsmanship with unwavering integrity to exceed your highest expectations. Our commitment to transparency and lasting value ensures that every detail of your project—from concept to completion—is executed flawlessly. Let us realize your elevated vision.
-            </p>
-            <p>
-                From foundational plumbing (septic systems) to complex structural roofing, we manage every phase of construction under one roof. With over 35 years dedicated to general construction, specialized roofing, and advanced weatherproofing, Trattner and Associates Construction Inc fuses uncompromising industrial standards with meticulous craftsmanship. Whether we are addressing an emergency repair or overseeing a full-scale build, your project receives the same level of precision—treated not just as blueprints, but as lasting art.
-            </p>
+        <!-- Section 2: Verification Steps -->
+        <div class="card">
+            <h2>How to Verify a Contractor Legally</h2>
+            <p>Take the following steps to ensure your project is completed safely, legally, and professionally:</p>
+            
+            <ol class="steps-list">
+                <li><strong>Check the State License Board:</strong> Always look up the contractor’s license status on your official state or local regulatory website to confirm it is active and in good standing.</li>
+                <li><strong>Request Proof of Insurance:</strong> Verify that the business carries general liability insurance and workers' compensation to protect your property from liability.</li>
+                <li><strong>Obtain Multiple Written Estimates:</strong> Do not be pressured by "limited-time" offers. Legitimate businesses provide detailed, written bids that break down labor and material costs.</li>
+                <li><strong>Report Fraudulent Activity:</strong> If you suspect scams, unlicensed activity, or dangerous behavior on a job site, contact local law enforcement or your state’s Department of Consumer Affairs immediately.</li>
+            </ol>
         </div>
-    </section>
 
+    </div>
+
+    <!-- Footer -->
     <footer>
-        <div class="footer-grid">
-            <div class="footer-col">
-                <h4>Contact Us</h4>
-                <p><strong>Jered Trattner</strong><br>Owner & General Contractor</p>
-                <a href="tel:5309131408"><i class="fa-solid fa-phone" style="color:var(--gold-accent);"></i> (530) 913-1408</a>
-                <a href="mailto:jeredtrattner01@gmail.com"><i class="fa-solid fa-envelope" style="color:var(--gold-accent);"></i> jeredtrattner01@gmail.com</a>
-            </div>
-
-            <div class="footer-col">
-                <h4>Legal & Policies</h4>
-                <a href="#">Terms of Service</a>
-                <a href="#">Privacy Policy</a>
-                <p style="font-size: 0.8rem; color: #888; margin-top: 15px;">
-                   <em>CSLB License #1133148. Fully insured.</em>
-                </p>
-            </div>
-
-            <div class="footer-col">
-                <h4>Follow Our Work</h4>
-                <p>See our latest builds, before & afters, and behind-the-scenes progress.</p>
-                <div class="footer-socials">
-                    <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                    <a href="#" target="_blank"><i class="fa-brands fa-yelp"></i></a>
-                </div>
-            </div>
-
-            <div class="footer-col" style="text-align: center;">
-                <h4>State Compliance</h4><!--
-                <img src="https://www.ca.gov/images/sep/logo-299-CSLB.webp" alt="California CSLB Logo" class="state-seal">-->
-                <img src="CSLB.png" alt="California CSLB Logo" class="state-seal">
-                <p style="font-size: 0.75rem; margin-top: 10px;">California Contractors State License Board Standard Compliance</p>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; <span id="year"></span> Trattner and Associates Construction Inc. All Rights Reserved.</p>
-            <p>Designed with Intention.</p>
-        </div>
+        <p>&copy; 2026 Public Consumer Safety Initiative. All rights reserved.</p>
+        <p>This page is intended for educational and public awareness purposes.</p>
     </footer>
-    
-<script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 
 </body>
 </html>
